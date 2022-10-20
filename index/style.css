@@ -1,0 +1,30 @@
+form {
+    text-align: center;
+    transform: translate(0px,50%);
+ 
+
+
+}
+
+body {
+    background-image: url("tlo.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-animation: myfirst 5s ; /* Chrome, Safari, Opera */
+    animation: myfirst 5s ;
+
+
+
+ 
+
+
+}
+
+@keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+}

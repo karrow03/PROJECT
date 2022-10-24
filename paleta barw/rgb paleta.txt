@@ -1,0 +1,3 @@
+zielony 162:189:49 RGB    #a2bd31
+niebieski 0:156:221 RGB   #009cdd
+granat 35:45:125 RGB      #232d7d

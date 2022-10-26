@@ -5,6 +5,7 @@
         <link href="style.css" rel="stylesheet" >
     </head>
     <body>
+        
 
 <form action="./formularz-projekt.php" method="POST">
 
@@ -29,6 +30,8 @@ Haslo:    <input type="password" name="haslo-re"><br>
 </form>
 
 
+
+
 <?php
 
 
@@ -36,3 +39,4 @@ Haslo:    <input type="password" name="haslo-re"><br>
 ?>
 
 </body>
+

@@ -10,8 +10,95 @@ overflow-y: hidden;
 }
 
 content {
+
+
+
+}
+
+#pudlo {
+
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 20px;
+
+
+}
+
+#imga {
+    box-shadow: 5px 5px 7px #888888;
     
 }
+
+#img1 {
+    box-shadow: 5px 5px 7px #888888;
+}
+
+#img2 {
+    box-shadow: 5px 5px 7px #888888;
+}
+
+#img4 {
+    box-shadow: 5px 5px 7px #888888;
+}
+
+#img5 {
+    box-shadow: 5px 5px 7px #888888;
+}
+
+
+#img1:hover {
+
+    animation: skalowanie 1s;
+    animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+    animation-fill-mode: forwards; 
+    
+}
+
+#img2:hover {
+
+    animation: skalowanie 1s;
+    animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+    animation-fill-mode: forwards; 
+    
+}
+
+
+#imga:hover {
+
+    animation: skalowanie 1s;
+    animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+    animation-fill-mode: forwards; 
+    
+}
+
+
+#img4:hover {
+
+    animation: skalowanie 1s;
+    animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+    animation-fill-mode: forwards; 
+    
+}
+
+#img5:hover {
+
+    animation: skalowanie 1s;
+    animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+    animation-fill-mode: forwards; 
+    
+}
+
+@keyframes skalowanie {
+    from {}
+    to {transform: scale(1.5);}
+  }
+
+
+
+
 
 footer {
     background-color: #232d7d;
@@ -65,6 +152,7 @@ height: 10%;
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
+    position: fixed;
 }
 .myButton:hover {
 	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);

@@ -9,6 +9,21 @@ overflow-x: hidden;
 overflow-y: hidden;
 }
 
+
+#login {
+
+    position: relative;
+    bottom: 120%;
+    left: 93%;
+}
+
+#rejestr {
+    position: relative;
+    bottom: 120%;
+    left: 86%;
+}
+
+
 content {
 
 
@@ -54,6 +69,7 @@ content {
     animation: skalowanie 1s;
     animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
     animation-fill-mode: forwards; 
+    cursor: pointer;
     
 }
 
@@ -62,7 +78,21 @@ content {
     animation: skalowanie 1s;
     animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
     animation-fill-mode: forwards; 
+    cursor: pointer;
+    opacity: 90%;
+}
+
+#img2h {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: arial;
+    font-size:15px;
+	font-weight:bold;
     
+
 }
 
 
@@ -71,6 +101,8 @@ content {
     animation: skalowanie 1s;
     animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
     animation-fill-mode: forwards; 
+    cursor: pointer;
+
     
 }
 
@@ -80,7 +112,7 @@ content {
     animation: skalowanie 1s;
     animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
     animation-fill-mode: forwards; 
-    
+    cursor: pointer;
 }
 
 #img5:hover {
@@ -88,7 +120,7 @@ content {
     animation: skalowanie 1s;
     animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
     animation-fill-mode: forwards; 
-    
+    cursor: pointer;
 }
 
 @keyframes skalowanie {

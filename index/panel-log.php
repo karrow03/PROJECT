@@ -1,8 +1,8 @@
 <!DOCTYPE html>
     <head>
-        <title>Gadżety Szczecina</title>
+        <title>Logowanie</title>
         <meta charset="utf-8">
-        <link href="style3.css" rel="stylesheet" >
+        <link href="style4.css" rel="stylesheet" >
         <link rel="icon" href="logo.png" sizes="30x30" type="image/png">
     </head>
 
@@ -16,12 +16,12 @@
     
     <div id="login">
         
-        <a href="http://localhost/PAI%20-%20Rowińska/PROJECT/index/panel-log.php" class="myButton">Zaloguj</a>
+        <a href="https://www.szczecin.eu/pl" class="myButton">Zaloguj</a>
     </div>
 
     <div id="rejestr">
         
-        <a href="http://localhost/PAI%20-%20Rowińska/PROJECT/index/panel-rejestr.php" class="myButton">Zarejestruj</a>
+        <a href="https://www.szczecin.eu/pl" class="myButton">Zarejestruj</a>
     </div>
 
 </header>
@@ -34,33 +34,20 @@
 <content>
 
     
-<div id="pudlo">
+<div id="panel">
     
-    
-   <div id="img1">
-        <img src="barrab.jpg" width="200" height="200"  >
-   </div> 
+<form class="second" action="./formularz-projekt.php" method="POST">
 
-   <div id="img2">
 
-        <img src="bosman.jpg" width="200" height="200"   >
-        
-        <div id="img2h">
-            PIWO
-        </div>
-   </div>
+<h3> Podaj login: </h3>
+<input type="text" name="login"><br>
+<h3> Podaj hasło: </h3>
+<input type="password" name="haslo"><br><br>
+<input type="submit" value="Zaloguj" name="wyslij"><br><br>
 
-   <div id="imga">
-        <img src="paprykarz.jpg" width="250" height="250" >
-   </div> 
-
-   <div id="img4">
-        <img src="dzwigi2.jpg" width="200" height="200" >
-   </div>
-
-    <div id="img5"> 
-        <img src="pogon.jfif" width="200" height="200"  >
-    </div>
+</form>
+<form class="second">
+   
     
 </div>
 

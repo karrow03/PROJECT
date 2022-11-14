@@ -1,8 +1,8 @@
 <!DOCTYPE html>
     <head>
-        <title>Gadżety Szczecina</title>
+        <title>Rejestracja</title>
         <meta charset="utf-8">
-        <link href="style3.css" rel="stylesheet" >
+        <link href="style4.css" rel="stylesheet" >
         <link rel="icon" href="logo.png" sizes="30x30" type="image/png">
     </head>
 
@@ -16,12 +16,12 @@
     
     <div id="login">
         
-        <a href="http://localhost/PAI%20-%20Rowińska/PROJECT/index/panel-log.php" class="myButton">Zaloguj</a>
+        <a href="https://www.szczecin.eu/pl" class="myButton">Zaloguj</a>
     </div>
 
     <div id="rejestr">
         
-        <a href="http://localhost/PAI%20-%20Rowińska/PROJECT/index/panel-rejestr.php" class="myButton">Zarejestruj</a>
+        <a href="https://www.szczecin.eu/pl" class="myButton">Zarejestruj</a>
     </div>
 
 </header>
@@ -34,33 +34,21 @@
 <content>
 
     
-<div id="pudlo">
+<div id="panel">
     
+<form action="./formularz-projekt.php" method="POST">
+
+
+<h1> REJESTRACJA </h1>
+Imię:     <input type="text" name="imie"><br>
+Nazwisko: <input type="text" name="nazwisko"><br>
+Login:    <input type="text" name="login-re"><br>
+Haslo:    <input type="password" name="haslo-re"><br>
+<input type="submit" name="rejestr" value="Zarejestruj">
+
+</form>
     
-   <div id="img1">
-        <img src="barrab.jpg" width="200" height="200"  >
-   </div> 
-
-   <div id="img2">
-
-        <img src="bosman.jpg" width="200" height="200"   >
-        
-        <div id="img2h">
-            PIWO
-        </div>
-   </div>
-
-   <div id="imga">
-        <img src="paprykarz.jpg" width="250" height="250" >
-   </div> 
-
-   <div id="img4">
-        <img src="dzwigi2.jpg" width="200" height="200" >
-   </div>
-
-    <div id="img5"> 
-        <img src="pogon.jfif" width="200" height="200"  >
-    </div>
+   
     
 </div>
 

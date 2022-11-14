@@ -1,0 +1,148 @@
+body {
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0.6306897759103641) 0%, rgba(0,156,221,1) 100%);
+background-repeat: no-repeat;
+min-height:1000px;
+width: 100%;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+
+#login {
+
+    position: relative;
+    bottom: 120%;
+    left: 93%;
+}
+
+#rejestr {
+    position: relative;
+    bottom: 120%;
+    left: 86%;
+}
+
+
+#panel {
+
+    position: fixed;
+    margin: 400px 0px 0px 900px;
+    font-family: arial;
+
+}
+
+
+footer {
+    background-color: #232d7d;
+    position: fixed;
+    right: 0;
+    top: 98%;
+    width: 8em;
+    margin-top: -2.5em;
+    width: 100%;
+    height: 7%;
+
+
+
+}
+
+header {
+    background-color: whitesmoke;
+    position: fixed;
+    right: 0;
+    top: 4%;
+    width: 8em;
+    margin-top: -2.5em;
+
+width: 100%;
+height: 10%;
+}
+
+#ikona1 {
+
+ 
+    width: 35px;
+    margin: 15px 70px;
+
+}
+
+
+
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    position: fixed;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+#all {
+    display: flex;
+    flex-wrap: wrap;
+    /* for horizontal aligning of child divs */
+    justify-content: center;
+    /* for vertical aligning */
+    align-items: center;
+  }
+
+
+
+
+  form{
+    border: 1px solid #333;
+    margin-bottom: 15px;
+    padding:15px;
+  }
+  input[type=text] {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 15px 12px 10px;
+  }
+  
+  .second input[type=text] {
+    width: 130px;
+    transition: width 0.4s ease-in-out;
+  }
+  .second input[type=text]:hover {
+    width: 100%;
+  }
+
+  input[type=password] {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 15px 12px 10px;
+  }
+  
+  .second input[type=password] {
+    width: 130px;
+    transition: width 0.4s ease-in-out;
+  }
+  .second input[type=password]:hover {
+    width: 100%;
+  }

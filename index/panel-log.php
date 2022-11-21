@@ -46,6 +46,29 @@
 <input type="submit" value="Zaloguj" name="wyslij"><br><br>
 
 </form>
+
+<?php
+
+if(isset($_POST['wyslij'])){
+    echo "Jestes zalogowany" . "<br>";
+
+}
+
+
+
+$hostname = 'localhost'; // Nazwa hosta
+$database = 'logowanie1'; // Nazwa bazy danych
+$username = 'root'; // Nazwa użtytkownika
+$password = ''; // Hasło
+
+$conn = new mysqli($hostname, $username, $password, $database);
+
+
+?>
+
+
+
+
 <form class="second">
    
     

@@ -10,6 +10,7 @@ overflow-y: hidden;
 }
 
 
+
 #login {
 
     position: relative;
@@ -22,6 +23,8 @@ overflow-y: hidden;
     bottom: 120%;
     left: 86%;
 }
+
+
 
 
 content {
@@ -70,6 +73,7 @@ content {
     animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
     animation-fill-mode: forwards; 
     cursor: pointer;
+    opacity: 90%;
     
 }
 
@@ -102,6 +106,7 @@ content {
     animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
     animation-fill-mode: forwards; 
     cursor: pointer;
+    opacity: 90%;
 
     
 }
@@ -113,6 +118,7 @@ content {
     animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
     animation-fill-mode: forwards; 
     cursor: pointer;
+    opacity: 90%;
 }
 
 #img5:hover {
@@ -121,6 +127,7 @@ content {
     animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
     animation-fill-mode: forwards; 
     cursor: pointer;
+    opacity: 90%;
 }
 
 @keyframes skalowanie {

@@ -124,7 +124,7 @@ height: 10%;
   
   .second input[type=text] {
     width: 130px;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; 
   }
   .second input[type=text]:hover {
     width: 100%;

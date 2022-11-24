@@ -1,8 +1,22 @@
+<?php 
+
+if(isset($_GET["page"]))
+	$strona = $_GET["page"];
+else
+	$strona = "glowna";
+
+echo "strona: ".$strona."<br>";
+
+
+?>
+
+
 <!DOCTYPE html>
     <head>
         <title>Gadżety Szczecina</title>
         <meta charset="utf-8">
         <link href="style3.css" rel="stylesheet" >
+        <link href="style.css" rel="stylesheet" >
         <link rel="icon" href="logo.png" sizes="30x30" type="image/png">
             
     </head>
@@ -17,12 +31,12 @@
     
     <div id="login">
         
-        <a href="http://localhost/PAI%20-%20Rowińska/PROJECT/index/panel-log.php" class="myButton">Zaloguj</a>
+        <a href="./index.php?page=panel-log" class="myButton">Zaloguj</a>
     </div>
 
     <div id="rejestr">
         
-        <a href="http://localhost/PAI%20-%20Rowińska/PROJECT/index/panel-rejestr.php" class="myButton">Zarejestruj</a>
+        <a href="./index.php?page=panel-rejestr" class="myButton">Zarejestruj</a>
     </div>
 
 </header>
@@ -34,42 +48,7 @@
 
 <content>
 
-    
-<div id="pudlo">
-    
-    
-   <div id="img1">
-        <img src="barrab.jpg" width="200" height="200"  >
-   </div> 
-
-   <div id="img2">
-
-        <img src="bosman.jpg" width="200" height="200"   >
-        
-   </div>
-
-   <div id="imga">
-        <img src="paprykarz.jpg" width="250" height="250" >
-   </div> 
-
-   <div id="img4">
-        <img src="dzwigi2.jpg" width="200" height="200" >
-   </div>
-
-    <div id="img5"> 
-        <img src="pogon.jfif" width="200" height="200"  >
-    </div>
-    
-</div>
-
-
-<div id="wyszukiwanie">
-    <form action="search.php" method="GET">
-        <input type="text" name="query" />
-        <input type="submit" value="Search" />
-    </form>
-</div>
-
+<?php if(($strona)!=null) include($strona.".php"); ?>
 
 </content>
 

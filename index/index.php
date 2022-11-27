@@ -16,8 +16,8 @@ echo "strona: ".$strona."<br>";
         <title>Gadżety Szczecina</title>
         <meta charset="utf-8">
         <link href="style3.css" rel="stylesheet" >
-        <link href="style.css" rel="stylesheet" >
         <link rel="icon" href="logo.png" sizes="30x30" type="image/png">
+            
             
     </head>
 
@@ -26,8 +26,11 @@ echo "strona: ".$strona."<br>";
 
 <header>
 
+            <div id="ikonag">
+            <a href="./index.php?page=glowna">
     <img src="logo.png" width="150" height="150" style=" margin-top: -9px;" >
-
+    </a>
+            </div>
     
     <div id="login">
         

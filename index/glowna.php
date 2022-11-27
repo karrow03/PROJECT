@@ -1,39 +1,22 @@
 
-    
-<div id="pudlo">
-    
-    
-   <div id="img1">
-        <img src="barrab.jpg" width="200" height="200"  >
-   </div> 
 
-   <div id="img2">
+<div id="tekst-g">
+     <br>
+<h1> Witaj na Gadżety Szczecina! </h1><br>
 
-        <img src="bosman.jpg" width="200" height="200"   >
-        
-   </div>
+ <p> Zastanawiasz się z czego słynie Szczecin? <br><br>U nas znajdziesz odpowiedź.<br><br>
+     Zajrzyj do naszej galerii i poznaj najpopularniejsze rzeczy miasta. 
+ </p>
 
-   <div id="imga">
-        <img src="paprykarz.jpg" width="250" height="250" >
-   </div> 
+</div>
 
-   <div id="img4">
-        <img src="dzwigi2.jpg" width="200" height="200" >
-   </div>
-
-    <div id="img5"> 
-        <img src="pogon.jfif" width="200" height="200"  >
-    </div>
-    
+<div id="galeria-przycisk">
+<a href="./index.php?page=galeria" class="myButton">GALERIA</a>
 </div>
 
 
-<div id="wyszukiwanie">
-    <form action="search.php" method="GET">
-        <input type="text" name="query" />
-        <input type="submit" value="Search" />
-    </form>
-</div>
+
+
 
 
 

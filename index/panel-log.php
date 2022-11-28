@@ -25,7 +25,6 @@ $conn -> close();
 }
 
 
-
 ?>
 
     
@@ -49,9 +48,8 @@ $conn -> close();
 
 <?php
 
-$_SESSION["login"] = $login;
-$_SESSION["haslo"] = $haslo;
-echo "Zalogowano";
+if (password_verify($_POST['haslo'], $haslo))
+  $_SESSION['x'] = htmlspecialchars($_POST['x']);
 
 
 ?>

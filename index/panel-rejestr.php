@@ -13,7 +13,7 @@ if(isset($_POST['rejestr'])){
 
 $imie = $_POST['imie'];
 $nazwisko = $_POST['nazwisko'];
-$login = $_POST['login-re'];;
+$login = $_POST['login-re'];
 $haslo = sha1($_POST['haslo-re']);
 $email = $_POST['email'];
 
@@ -33,7 +33,7 @@ else echo "Nie udało się dodać nowego rekordu";
 
 <h1 style="background-color: #a2bd31;
     color: #ffffff;
-    text-shadow:   1px 1px #000000; width: 100%;"> REJESTRACJA </h1>
+    text-shadow:   1px 1px #000000; width: 100%;"> REJESTRACJA </h1><br>
 Imię:   <br>  <input type="text" name="imie" required><br><br>
 Nazwisko: <br> <input type="text" name="nazwisko" required><br><br>
 Login:   <br> <input type="text" name="login-re" required><br><br>
@@ -50,12 +50,6 @@ Email: <br> <input type="email" name="email" required><br><br>
 
 <?php
 
-$_SESSION["login"] = $login;
-$_SESSION["haslo"] = $haslo;
-$_SESSION["email"] = $email;
-$_SESSION["nazwisko"] = $nazwisko;
-$_SESSION["imie"] = $imie;
 
-echo "Zarejestrowano.";
 
 ?>

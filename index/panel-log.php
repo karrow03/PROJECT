@@ -1,9 +1,37 @@
+<?php
+session_start();
 
+$hostname = 'localhost'; // Nazwa hosta
+$database = 'logowanie1'; // Nazwa bazy danych
+$username = 'root'; // Nazwa użtytkownika
+$password = ''; // Hasło
+
+$conn = new mysqli($hostname, $username, $password, $database);
+
+
+$query = "SELECT * FROM użytkownicy";
+$result = $conn->query($query);
+
+if(isset($_POST['submit'])) {
+
+while($row = $result->fetch_assoc()){
+   if($_POST['x']==$row['login'] && $_POST['haslo']==$row['haslo']) {
+    echo "Jesteś zalogowany";
+   }
+}
+
+$result -> close();
+$conn -> close();
+}
+
+
+
+?>
 
     
 <div id="panel">
     
-<form class="second" action="./formularz-projekt.php" method="POST">
+<form class="second" method="POST">
 
 <h1 style="background-color: #a2bd31;
     color: #ffffff;
@@ -13,7 +41,7 @@
 <input type="text" name="x"><br>
 <h3> Podaj hasło: </h3>
 <input type="password" name="haslo"><br><br>
-<input type="submit" value="Zaloguj" name="wyslij"><br><br>
+<input type="submit" value="Zaloguj" name="submit"><br><br>
 
 </form>
 
@@ -21,17 +49,20 @@
 
 <?php
 
-$x = $_POST['login'];
-
-if(isset($_POST['wyslij'])){
-
-    echo "Jestes zalogowany jako ". $_POST['login'] . "<br>";
-
-}
-
-
+$_SESSION["login"] = $login;
+$_SESSION["haslo"] = $haslo;
+echo "Zalogowano";
 
 
 ?>
+
+
+
+ 
+
+
+
+
+
 
 

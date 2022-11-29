@@ -15,7 +15,7 @@ $result = $conn->query($query);
 if(isset($_POST['submit'])) {
 
 while($row = $result->fetch_assoc()){
-   if($_POST['x']==$row['login'] && $_POST['haslo']==$row['haslo']) {
+   if($_POST['login']==$row['login'] && $_POST['haslo']==$row['haslo']) {
     echo "Jesteś zalogowany";
    }
 }
@@ -37,9 +37,9 @@ $conn -> close();
     text-shadow:   1px 1px #000000; min-width: 100%;"> LOGOWANIE </h1>
 
 <h3> Podaj login: </h3>
-<input type="text" name="x"><br>
+<input type="text" name="login" required><br>
 <h3> Podaj hasło: </h3>
-<input type="password" name="haslo"><br><br>
+<input type="password" name="haslo" required><br><br>
 <input type="submit" value="Zaloguj" name="submit"><br><br>
 
 </form>
@@ -48,12 +48,31 @@ $conn -> close();
 
 <?php
 
-if (password_verify($_POST['haslo'], $haslo))
-  $_SESSION['x'] = htmlspecialchars($_POST['x']);
 
 
-?>
+    if(isset($_POST['login'])){
 
+      $_SESSION["login"] = $_POST['login'];
+      echo "LOGIN :".$_SESSION["login"]. " ".$_POST["login"];
+
+    }
+
+
+
+    echo("<br>");
+
+               
+
+    if(isset($_POST['haslo'])){
+
+        $_SESSION["haslo"] = ($_POST['haslo']);
+
+    }
+
+
+
+
+    ?>
 
 
  

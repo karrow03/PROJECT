@@ -78,13 +78,13 @@ div.gallery {
 #login {
 
     position: relative;
-    bottom: 150%;
+    bottom: 120%;
     left: 92%;
 }
 
 #rejestr {
     position: relative;
-    bottom: 150%;
+    bottom: 120%;
     left: 83%;
 }
 
@@ -188,8 +188,10 @@ height: 10%;
 }
 
 #tekst-g {
+    position: relative;
     text-align: center;
-    margin: 10% 35%;
+    margin-top: 10%;
+    left: 35%;
     color: #ffffff;
     font: normal bold 15px/1 "Open Sans", sans-serif;
     text-shadow:   1px 1px #000000;
@@ -202,7 +204,8 @@ height: 10%;
 
 #galeria-przycisk {
     position: relative;
-    margin: -7% 46%;
+    margin-top: 5%;
+    left: 45%;
 
 }
 

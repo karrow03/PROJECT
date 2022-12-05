@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 if(isset($_GET["page"]))
 	$strona = $_GET["page"];
 else
@@ -33,8 +33,22 @@ echo "strona: ".$strona."<br>";
             </div>
     
     <div id="login">
-        
-        <a href="./index.php?page=panel-log" class="myButton">Zaloguj</a>
+
+    <?php
+        if(isset($_SESSION['login'])){
+            echo  "<a class='myButton' href='?logout=1'>Wyloguj</a>";
+            if(isset($_GET['logout'])){
+                $logout=$_GET['logout'];
+                if($logout==1){
+                    session_destroy();
+                    header('Location: index.php?page=glowna');
+                }
+            }
+        }
+        else {
+        echo "<a href='./index.php?page=panel-log' class='myButton'>Zaloguj</a>";
+        }
+        ?>
     </div>
 
     <div id="rejestr">

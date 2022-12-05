@@ -14,11 +14,17 @@ $result = $conn->query($query);
 
 if(isset($_POST['submit'])) {
 
+    if(isset($_POST['login']) && isset($_POST['haslo'])) {
 while($row = $result->fetch_assoc()){
-   if($_POST['login']==$row['login'] && $_POST['haslo']==$row['haslo']) {
-    echo "Jesteś zalogowany";
+   if($_POST['login']==$row['login'] && sha1($_POST['haslo'])==$row['haslo']) {
+        $_SESSION["login"] = $row['login'];
+        $_SESSION["imie"] = $row['imie'];
+        $_SESSION["nazwisko"] = $row['nazwisko'];
+
+    header('Location: index.php?page=glowna');
    }
 }
+    }
 
 $result -> close();
 $conn -> close();
@@ -46,33 +52,7 @@ $conn -> close();
 
 </div>
 
-<?php
 
-
-
-    if(isset($_POST['login'])){
-
-      $_SESSION["login"] = $_POST['login'];
-      echo "LOGIN :".$_SESSION["login"]. " ".$_POST["login"];
-
-    }
-
-
-
-    echo("<br>");
-
-               
-
-    if(isset($_POST['haslo'])){
-
-        $_SESSION["haslo"] = ($_POST['haslo']);
-
-    }
-
-
-
-
-    ?>
 
 
  

@@ -17,8 +17,13 @@ $login = $_POST['login-re'];
 $haslo = sha1($_POST['haslo-re']);
 $email = $_POST['email'];
 
+
+
 $sql = "INSERT INTO `użytkownicy`(`id`, `imie`, `nazwisko`, `login`, `haslo`, `email`) 
         VALUES (NULL, '$imie', '$nazwisko', '$login', '$haslo', '$email')";
+
+header('Location: index.php?page=glowna');
+
 
 if($result = $conn -> query($sql)) echo "Dodano nowy rekord";
 else echo "Nie udało się dodać nowego rekordu";

@@ -14,9 +14,10 @@ echo "strona: ".$strona."<br>";
 <!DOCTYPE html>
     <head>
         <title>Gadżety Szczecina</title>
+        <link rel="icon" href="logo.png" sizes="30x30" type="image/png">
         <meta charset="utf-8">
         <link href="style3.css" rel="stylesheet" >
-        <link rel="icon" href="logo.png" sizes="30x30" type="image/png">
+        
             
             
     </head>
